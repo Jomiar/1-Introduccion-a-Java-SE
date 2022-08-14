@@ -6,7 +6,7 @@ public class MathematicOperations {
         System.out.println(Math.floor(x));//Devuelve un Redondeo hacia abajo
         System.out.println(Math.pow(x,y));//Devuelve un numero elevado al otro
         System.out.println(Math.max(x,y));//Devuelve el numero mayor
-        System.out.println(Math.sqrt(y));//Devuelve la raiz cuadrada
+        System.out.println((int) Math.sqrt(y));//Devuelve la raiz cuadrada
         System.out.println(Math.PI * Math.pow(y,2));//Devuelve el area de un circulo
         //Area de una esfera
         //4*PI*r2
