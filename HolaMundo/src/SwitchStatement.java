@@ -19,9 +19,6 @@ public class SwitchStatement {
             default:
                 System.out.println("Selecciona una opcion correcta");
 
-
         }
-
-
     }
 }
