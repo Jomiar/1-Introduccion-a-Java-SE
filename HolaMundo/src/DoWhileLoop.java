@@ -6,17 +6,18 @@ public class DoWhileLoop {
     public static void main(String[] args) {
         int response = 0;
 
-        do{
+        do {
             System.out.println("Seleccione al número de la opción deseada");
-            System.out.println("Seleccionada");
             System.out.println("1. Movies ");
-            System.out.println("Series");
-            System.out.println("Salir");
+            System.out.println("2. Series");
+            System.out.println("0. Salir");
 
+            //integer.valueof sirve para que el valor ingresado sea convierta en un entero
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
 
-            switch (response){
+
+            switch (response) {
                 case 0:
                     System.out.println("Gracias por visitarnos");
                     break;
@@ -28,8 +29,10 @@ public class DoWhileLoop {
                     break;
                 default:
                     System.out.println("Seleccione una opcion correcta");
-            } do(response != 0);
+            }
+        } while (response != 0);
 
-        }
+        System.out.println("Se termino el programa");
     }
 }
+
